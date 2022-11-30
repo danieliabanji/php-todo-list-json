@@ -30,5 +30,8 @@ createApp({
                     this.newTask = "";
                 });
         },
+        removeTask(todo) {
+            this.listTodo = this.listTodo.filter((t) => t !== todo)
+        },
     },
 }).mount("#app");

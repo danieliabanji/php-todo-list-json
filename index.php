@@ -28,8 +28,10 @@
                         <ul class="list-group d-flex justify-content-center">
                             <li @click="changeDone(index)" class="list-group-item d-flex justify-content-between"
                                 v-for="(todo , index )  in listTodo"
-                                :id="todo.done === false ? 'todo-done-false' : ' '">{{ todo.text}} <i
-                                    class="fa-solid fa-trash"></i></li>
+                                :id="todo.done === false ? 'todo-done-false' : ' '">{{ todo.text}}
+                                <button @click.stop="removeTask(todo)" class="btn"><i
+                                        class="fa-solid fa-trash"></i></button>
+                            </li>
                         </ul>
                     </div>
                 </div>
