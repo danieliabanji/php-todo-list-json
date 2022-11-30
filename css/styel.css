@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #001632;
+    /* background-color: red; */
+}
+h1{
+    color: #6b747c;
+}
+.todo-container , .container{
+    width: 70%;
+    margin: 0 auto ;
+}
+.submit-container, .container{
+    width: 50%;
+    margin: 0 auto ;
+}
+#todo-done-false{
+    text-decoration: line-through;
+}
+
+.todo-container i{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+}
+.todo-container li{
+    cursor: pointer;
+}
